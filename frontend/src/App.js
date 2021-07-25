@@ -51,7 +51,7 @@ function App() {
       };
       try {
         const response = await fetch(
-          'http://localhost:5000/api/keywords',
+          'https://search-news-app.herokuapp.com/api/keywords',
           settings
         );
         await response.json();
@@ -80,7 +80,7 @@ function App() {
     };
     try {
       const response = await fetch(
-        'http://localhost:5000/api/articles',
+        'https://search-news-app.herokuapp.com/api/articles',
         settings
       );
       await response.json();
